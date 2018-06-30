@@ -1,8 +1,14 @@
 # OceanShare-Module
 
 ## How to connect your computer on the Raspberry:
-* On the Raspberry: ifconfig
-* On your computer ssh pi@<ipadress>
+* On the Raspberry: 
+```
+ifconfig
+```
+* On your computer: 
+```
+ssh pi@<ipadress>
+```
 * Mot de passe: Blitzkrieg
 
 ## Wiki:
