@@ -35,7 +35,7 @@ def read_temp():
     humidity, temperatureXT = Adafruit_DHT.read_retry(Adafruit_DHT.DHT11, 17)
     curLat = 43.695765
     curLong = 7.270008
-    temperature = {'tempfeau':temp_f, 'tempceau':temp_c, 'humair':humidity, 'tempcair': temperatureXT, 'lat': curLat, 'long': curLong}
+    temperature = {'water_fahrenheit':temp_f, 'water_celsius':temp_c, 'air_humidity':humidity, 'air_celsius': temperatureXT, 'latitude': curLat, 'longitude': curLong}
     return temperature
 
 def post():
@@ -43,10 +43,10 @@ def post():
     data = temperature
     # TESTING #
     print(data)
-    r = requests.post('https://api.github.com/events', data)
-    r.encoding = 'ISO-8859-1'
-    print(r.url)
-    print(r.text)
+    # r = requests.post('https://api.github.com/events', data)
+    # r.encoding = 'ISO-8859-1'
+    # print(r.url)
+    # print(r.text)
     # END TESTING #
     
 def post_loop():
