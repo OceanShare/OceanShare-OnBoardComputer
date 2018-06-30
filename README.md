@@ -1,11 +1,11 @@
 # OceanShare-Module
 
 ## How to connect your computer on the Raspberry:
-* On the Raspberry: 
+* On the Raspberry:
 ```
 ifconfig
 ```
-* On your computer: 
+* On your computer:
 ```
 ssh pi@<ipadress>
 ```
